@@ -151,6 +151,7 @@ document.getElementById("body").style.backgroundImage = "url('/images/indexbg.pn
 		<a href=https://fan.kalechips.net/pikmin/ target=_blank><img src=/images/pikfanlist.png title="pikmin fanlistings"></a>
 		<asdfasdf class=inlineshit>
 			<br><span><asdf id=updated></asdf>
+			<br><span><asdf>last commit: <a href="https://github.com/rosefloase/thepersonever" id="commit" target=_blank>uhh</a>
 			<br><asdf id=visitors></asdf>
 			<br><asdf id=followers></asdf>
         </asdfasdf>
@@ -162,7 +163,7 @@ document.getElementById("body").style.backgroundImage = "url('/images/indexbg.pn
 	</a></span></p>
 </asdfasdf>
 	
-<p><span>tested with <a href=https://librewolf.net/ target=_blank>librewolf</a> (firefox) and <a href=https://thorium.rocks/ target=_blank>thorium</a> (chromium), and <a href=https://classic.waterfox.net/ target=_blank>waterfox</a> (xpi firefox) on linux! (arch. uh. btw.)
+<p><span>tested with <a href=https://librewolf.net/ target=_blank>librewolf</a> (modern firefox), <a href=https://thorium.rocks/ target=_blank>thorium</a> (chromium), and <a href=https://classic.waterfox.net/ target=_blank>waterfox</a> (xpi firefox) on linux! (arch. uh. btw.)
   <br>flash content runs insane on thorium! check it out if you can</span></p>
       
 <script>
@@ -188,12 +189,21 @@ let username = "thepersonever.net"; // <<<--- Insert your username here!
   } catch (error) {
     console.error(error);
     // If you wish to insert some fallback here, you may do so!
+   // i don't i'm evil
   }
 })();
  
 function commaize(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+// this script is sexy. and stolen from https://stackoverflow.com/questions/67986923/how-to-display-the-name-of-the-latest-commit-on-github-to-my-website
+
+fetch('https://api.github.com/repos/rosefloase/thepersonever/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('commit').innerHTML = res[0].commit.message
+  });
 </script>
 </div>
 </center>
