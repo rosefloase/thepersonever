@@ -3,6 +3,9 @@ document.getElementById('hide').style.display = 'inline';
 document.getElementById("div").style.backgroundImage = "url(images/looseleaf.jpeg)";
 document.getElementById("div").style.backgroundSize = "500px";
 document.getElementById('innerbleh').innerHTML = `
+<h2><span>a little foreboding</span></h2> <img src=https://i.imgur.com/HuiDEl1.jpeg width=500px>
+<!-- <h2><span>AH AH AH AH SPOILERZ!!!!!!!!!!!!!!!</span></h2> <img src=https://i.imgur.com/5uNycxk.jpeg width=500px> -->
+<h2><span>still getting back in the groove...</span></h2> <img src=https://i.imgur.com/beeVXjx.jpeg width=500px>
 <h2><span>getting back in the groove</span></h2> <img src=https://i.imgur.com/hmdj60c.jpeg width=500px>
 <h2><span>pikitory practice</span></h2> <img src=https://i.imgur.com/XqZmuhd.jpeg width=500px>
 <h2><span>hi raz</span></h2> <img src=https://i.imgur.com/7WdiFI1.jpeg width=500px>
