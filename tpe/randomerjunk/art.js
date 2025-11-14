@@ -147,7 +147,8 @@ function computer2025(){
 document.getElementById('hide').style.display = 'inline';
 document.getElementById("div").style.backgroundImage = "url(/images/toxiceryuri.png)";
 document.getElementById("div").style.backgroundSize = "cover";
-document.getElementById('innerbleh').innerHTML = `<h2><span>year of the linux desktop</span></h2> <img src=/images/awesomexenia.png width=700>
+document.getElementById('innerbleh').innerHTML = `<h2><span>i made baby game art. please don't hate me</span></h2> <img src=/images/babygamecrop.png width=700>
+<h2><span>year of the linux desktop</span></h2> <img src=/images/awesomexenia.png width=700>
 <h2><span>ugly ugly ugly</span></h2> <img src=/images/uggos.png width=500>
 <h2><span>hi xenia!</span></h2> <img src=/images/xeniaiconcrop.png width=500>
 <h2><span>cmmmon and get down, way to the low ground...</span></h2> <img src=/images/umcrop.png width=500>`;
