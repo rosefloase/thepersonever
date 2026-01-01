@@ -143,6 +143,13 @@ function paperolder(){
  document.getElementById('div').style.backgroundImage = 'url(/images/5reams.jpeg)';
  document.getElementById("div").style.backgroundSize = "500px";
 }
+function computer2026(){
+document.getElementById('hide').style.display = 'inline';
+document.getElementById("div").style.backgroundImage = "url(/images/toxiceryuri.png)";
+document.getElementById("div").style.backgroundSize = "cover";
+document.getElementById('innerbleh').innerHTML = `<h2><span>first slrt of 2026</span></h2> <img src=/images/slrt2026.png width=500>
+
+`}
 
 function computer2025(){
 document.getElementById('hide').style.display = 'inline';

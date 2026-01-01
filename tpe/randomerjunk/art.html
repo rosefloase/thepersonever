@@ -15,6 +15,10 @@
      background-image: url(images/table.png); 
      background-size:100%;
      background-repeat:repeat;
+     image-rendering: pixelated;
+    }
+    body>*{
+	image-rendering: auto;
     }
 	
 	.buttons{
@@ -32,7 +36,7 @@
 	}
 	
 	#div{
-	background-color: #FFFFFF;
+	image-rendering: auto; /*i need to make this change between computer and physical art ... will do after the rework maybe */
 	height:justify;
 	width:50%; 
 	top: 5%
@@ -107,6 +111,7 @@
 <div class=postbrs>
 <h1><br></h1>
 </div>
+<img src=images/icons/computer2026.png onclick="computer2026()">
 <img src=images/icons/computer2025.png onclick="computer2025()">
 <img src=images/icons/computer2024.png onclick="computer2024()">
 <img src=images/icons/computer2023.png onclick="computer2023()">
