@@ -61,6 +61,10 @@ small{
 	image-rendering: pixelated;
 }
 
+w{
+	background-color: white;
+}
+
 .groove { /* idk if this is unused or not sooooo it stays */
 	border-style: groove; 
 	background-color: white;
