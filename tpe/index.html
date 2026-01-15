@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proships please don't touch me</title>
+    <title>2woke4u</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="/icons/tpe.png">
 
@@ -91,7 +91,7 @@ a few things of note...
 <body style="margin: 0px; background-size: cover;" id="body">
 
 <div id="html" style="margin: auto; text-align: center;">
-<h1><span>I AM A LESBAIN!!!!!!!! RAHHHHHHH</span>
+<h1><span>kill twitter. kill it kill it KILL IT</span>
 <br></h1>
 <h3><span>!! <strong>epilepsy warning</strong> !!
 <br> remember 2 clear your cache!! (and to turn on autoplay)
@@ -111,8 +111,27 @@ a few things of note...
 <a href=/home id=enterimg></a>
 
 <script>
-setTimeout( callbackFunction, 1000 );
-function callbackFunction(){
+setTimeout( tryswfobject, 500 );
+
+function tryswfobject(){
+	var caught = false;
+	try {
+		swfobject
+	}
+	catch {
+		caught = true
+	}	
+	
+	if (caught == true){
+		setTimeout( tryswfobject, 500 );
+	}
+	else{
+		console.log("ok you can load now :)")
+		setupflash()
+	}
+}
+
+function setupflash(){ 
   var att = { data:"/flashes/tpeintro.swf", width:"100%", height:"100%", wmode:"transparent" };
   var par = { shit:"foo=bar" };
   var id = "swfdiv";
@@ -132,6 +151,7 @@ document.getElementById("body").style.backgroundImage = "url('/images/bggif.gif'
 
 function resetti(){
 document.getElementById("swfwrapper").style = "width: 100%; max-width: 480px; height: 330px; overflow: hidden; margin: auto; text-align: center;";
+document.getElementById("swfwrapper").style.backgroundImage = "unset";
 document.getElementById("html").style.display = "block";
 document.getElementById("lowerhtml").style.display = "block";
 document.getElementById("body").style.backgroundImage = "url('/images/indexbg.png')";
