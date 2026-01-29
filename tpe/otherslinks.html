@@ -7,28 +7,13 @@
     <title>thepersonever - neilcic website joke</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
         <style>
-  span {
-  background-color: #ffffff;
-}
-.rightish {
-  position: absolute;
-  right: 0px;
-  width: 600px;
-  border: 0px solid #73AD21;
-  padding: 10px;
-}
 .right {
+  z-index: 2;
+  text-align: left;
+  position: relative;
   float: right;
 }
 
-.container {
-  width:450px;
-  height:250px;
-  border: 0px solid black;
-  position:absolute;
-  top: 360px;
-  right: 30px;
-}
 
 body{
  background-image: url(/images/linksbg.png);
@@ -36,7 +21,21 @@ body{
  overflow-x: hidden;
 }
 
+	#linksdiv{
+		max-width: 55%;
+	}
+
+  @media screen and (orientation:portrait){
+	.right{
+		display: none;
+	}
+	#linksdiv{
+		max-width: 100%;
+	}
+  }
+
 </style>
+	<!--# include file="flashes/navbar/header.html" -->
   </head>
   <body>
   
@@ -46,7 +45,7 @@ body{
   <br>
   <img src=/tkesmall.png class=logo>
   <br>
-  <br>  <iframe src="/iframes/bar.html" style="height:30%;width:75%; z-index: 10; overflow:scroll;"></iframe>
+  <br>  <iframe src="/iframes/bar.html" id=oldnav></iframe>
 
    </center>
     
@@ -55,8 +54,6 @@ body{
   <br>
   
   <div class=right>
-<div class=container>
-
   <h3><span> my buttons if you need one for some reason </span></h3>
 
     <a href="https://thepersonever.net/" target=_blank><img src="https://thepersonever.net/thepersoneverbutton.gif" alt="thepersonever.net button!"></a>
@@ -72,22 +69,19 @@ body{
 <textarea>&lt;a href="https://ruffle.rs/" target=_blank&gt;&lt;img src=/getruffle.png title="thepersonever's get ruffle button"&gt;&lt;/a&gt;</textarea>
 <br>
 
- 	<a href="https://thepersonever.net/" target=_blank><img src="https://thepersonever.net/tpebutton2.gif" alt="thepersonever.net button! shows off outdated subsites"></a>
+ 	DONT USE THIS ONE OKAY<a href="https://thepersonever.net/" target=_blank><img src="https://thepersonever.net/tpebutton2.gif" alt="thepersonever.net button! shows off outdated subsites"></a>
 <textarea>
 &lt;a href="https://thepersonever.net/" target=_blank&gt;&lt;img src="https://thepersonever.net/tpebutton2.gif" alt="thepersonever.net button! shows off outdated subsites"&gt;&lt;/a&gt;</textarea>
 <br>
 
   <p><span>want YOUR button on MY site? email jadeharley0409 (at) proton.me!</span>
   <br><span>also... <a href="https://thepersonever.atabook.org/" target=_blank>sign my guestbook!!!</a></span></p>
-    </div></div> 
 
 
-  <div class=right>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <span>"i only send people to high-quality websites!"</span><br>
 <img src=/images/funkay.png class=pixel>
 </div>
-<div style="max-width: 55%;">
+<div id=linksdiv>
   <a href="https://melonking.net" target=_blank><img alt="melonking button!" src=/images/melonbutton.gif></a>
   <a href="https://sadgrl.online/" target=_blank> <img src=/images/sadgrl.gif alt="sadgrl button!"></a>
   <a href="https://transrats.neocities.org/" target=_blank class="button"><img src=/images/transrats.gif alt="trans rats button!"></a>
@@ -188,26 +182,21 @@ body{
 <br><a href=https://homestuck.net/the-baby-is-you/ target=_blank style="color: #e00707;"><span>your the baby john</span></a>
 <br><a href=https://archive.org/details/radiationhalloweenhack target="_blank"><span>earthbound halloween hack by toby fox/radiation</span></a>
 <br><a href=https://downloads.thepersonever.net/backup target=_blank><span>older tpe versions</span></a>
-<br><a href=https://github.com/giovanh/unofficial-homestuck-collection target=_blank><span>the best way to read homestuck (right now)</span></a>
+<br><a href=https://github.com/giovanh/unofficial-homestuck-collection target=_blank><span>the best way to read homestuck</span></a>
 <br><a href=https://github.com/rosefloase/tpeintro target=_blank><span>index intro fla</span></a>
 <br><a href=https://github.com/rosefloase/jadethink target=_blank><span>thoughts fla</span></a>
 <br><a href=https://github.com/rosefloase/goodscale target=_blank><span>goodscale fla and javascript</span></a>
  
-<center> <h1><br>
-<br>
-</h1>
-<a href="home.html"><span> home </span></a>
+<center>
 
-<br>
-<br>
 <p><em><span> rocket ships!! (rocket ships!!!) astronauts!! (astronauts!!!) aliens!! (aliens!!!) laser beam blaster shots- </span></em></p>
-<br>
 <br> 
+<glah style="float: left;"><span>music is funky the main monkey, from the dkc2 ost</span></glah>
 </center>
 
                <br>
 
-<glah style="float: right;"><span>music is funky the main monkey, from the dkc2 ost</span></glah>
 
+<!--# include file="flashes/navbar/end.html" -->
   </body>
 </html>

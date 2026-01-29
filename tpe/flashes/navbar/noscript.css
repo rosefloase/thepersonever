@@ -1,0 +1,9 @@
+body{
+	margin-right: unset;
+}
+#navwrapper{
+	display: none;
+}
+#oldnav{
+	display: inline;
+}

@@ -13,6 +13,7 @@
 		}
 		  
 		.ack {
+			z-index: 2;
 			image-rendering: pixelated;
 			aspect-ratio: 9/8;
 			width: 60vw;
@@ -86,6 +87,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thepersonever - bloggg?????</title>
+    <!--# include file="flashes/navbar/header.html" -->
   </head>
   <body>
 
@@ -93,9 +95,9 @@
 
 		<center>
 		  <br>
-		  <img src=/tkesmall.png style="height: 200px">
+		  <img src=/tkesmall.png class=logo>
 		  <br>
-		  <br>  <iframe src="/iframes/bar.html" style="height:30%;width:75%; z-index: 10; overflow:scroll;"></iframe>
+		  <br>  <iframe src="/iframes/bar.html" id="oldnav"></iframe>
 		  <br>
 		  <h1><span>blog thing???</span></h1>
 		  <br>
@@ -122,7 +124,6 @@
 		<p><span>i'm more nostalgic for people being nostalgic over windows xp than windows xp itself</span></p>
 		<br>
 		 <p><a href="https://thepersonever-site-updates.tumblr.com" target=_blank><span>blog??? like... tumblr blog???? for updates???????????</span></a></p>
-		 <p><a href="otherslinks.html" target=_blank><span>please god go to my links page</span></a></p>
 		<br>
 		<br>
 		</center>
@@ -172,5 +173,7 @@
 			
 			setInterval(updatetime, 1000);
 		</script>
+
+		<!--# include file="flashes/navbar/end.html" -->
   </body>
 </html>

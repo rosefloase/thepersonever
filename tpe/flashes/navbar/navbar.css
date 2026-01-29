@@ -1,0 +1,36 @@
+body{
+	margin-right: 4.3vw;
+}
+
+#oldnav{
+	height:30%;
+	width:75%;
+	z-index: 10;
+	overflow: scroll;
+	display: none;
+}
+
+#navwrapper{
+	background-image: url(loading.png);
+	image-rendering: pixelated;
+	background-size: cover;
+	height: 100vh;
+	aspect-ratio: 3/4;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	pointer-events: all;
+}
+
+@media screen and (orientation: portrait) {
+	#navwrapper{
+		display: none;
+	}
+	#oldnav{
+		display: inline;
+	}
+	body{
+		margin-right: unset;
+	}
+}
