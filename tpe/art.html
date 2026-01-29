@@ -21,6 +21,8 @@ its not btw. its neil cicirega aka lemon demon
 			min-height: 100%;
 		}
 		.container{
+			z-index: 2;
+			position: relative;
 			max-width: 60vw;
 			margin: auto;
 		}
@@ -76,25 +78,50 @@ its not btw. its neil cicirega aka lemon demon
         <p><span>my own mspas!!!</span></p>
     </div>
     <div class=contained id=vault>
-        <a href="javascript:hidebody();"><img src=/images/vaultlink.png width=90%></a>
+        <a href="javascript:tryswfobj();"><img src=/images/vaultlink.png width=90%></a>
         <p><span>old and abandoned stuff</span></p>
     </div>
 </div>
 
 <script>
-var mainbody = document.getElementById("body");
-var iframe = document.createElement("iframe");
+var div = document.createElement("div");
+var vaultdiv= document.createElement("div");
+document.body.appendChild(div);
+vaultdiv.style = "width: 100%; height: 100%; margin: 0;";
+vaultdiv.id = "vaultdiv";
+div.appendChild(vaultdiv);
 
-function hidebody(){
-    iframe.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 0; animation-name: fadein; animation-duration: 1s; animation-fill-mode: forwards;"
-    makeiframe();
+function tryswfobj(){
+	var caught = false;
+	try {
+		swfobject
+	}
+	catch {
+		caught = true
+	}	
+	
+	if (caught == true){
+		console.log("NO SWFOBJECT!");
+		setTimeout( tryswfobject, 500 );
+	}
+	else{
+		setupvaultflash()
+	}
 }
 
-function makeiframe(){
-    iframe.src = "/vault/";
-    document.body.appendChild(iframe);
+function setupvaultflash(){
+	div.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 0; animation-name: fadein; animation-duration: 1s; animation-fill-mode: forwards;";
+	var att = { data:"/vault/vault.swf", width:"100%", height:"100%",};
+	var par = { shit:"foo=bar" };
+	var id = "vaultdiv";
+	swfobject.createSWF(att, par, id);
+	div.addEventListener("animationend", animationcallback);
 }
 
+function animationcallback(){
+	document.body.style = "overflow: hidden;"
+	div.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 1;";
+}
 
 </script>
 
