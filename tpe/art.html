@@ -10,7 +10,12 @@ its not btw. its neil cicirega aka lemon demon
     <style>
 		@keyframes fadein{
 			from {opacity: 0;}
-			to {opacity: 1; display: none;}
+			to {opacity: 1;}
+		}
+
+		@keyframes fadeout{
+			from {opacity: 1;}
+			to {opacity: 0;}
 		}
 
 		body{
@@ -28,7 +33,7 @@ its not btw. its neil cicirega aka lemon demon
 		}
 		.contained{
 			image-rendering: pixelated;
-			display: inline-block;i
+			display: inline-block;
 			max-width: 30%;
 		}
 	  
@@ -84,14 +89,21 @@ its not btw. its neil cicirega aka lemon demon
 </div>
 
 <script>
+var flashonscreen = false;
+var canmakenewflash = true;
+var firstrun = true;
 var div = document.createElement("div");
-var vaultdiv= document.createElement("div");
-document.body.appendChild(div);
+var vaultdiv = document.createElement("div");
+
 vaultdiv.style = "width: 100%; height: 100%; margin: 0;";
 vaultdiv.id = "vaultdiv";
 div.appendChild(vaultdiv);
 
 function tryswfobj(){
+	if (canmakenewflash == false){
+		return;
+	}
+
 	var caught = false;
 	try {
 		swfobject
@@ -110,17 +122,40 @@ function tryswfobj(){
 }
 
 function setupvaultflash(){
-	div.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 0; animation-name: fadein; animation-duration: 1s; animation-fill-mode: forwards;";
-	var att = { data:"/vault/vault.swf", width:"100%", height:"100%",};
-	var par = { shit:"foo=bar" };
-	var id = "vaultdiv";
-	swfobject.createSWF(att, par, id);
+	document.body.appendChild(div);
+
 	div.addEventListener("animationend", animationcallback);
+	div.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 0; animation-name: fadein; animation-duration: 1s; animation-fill-mode: forwards;";
+
+	if (firstrun == true){
+		var att = { data:"/vault/vault.swf", width:"100%", height:"100%",};
+		var par = { shit:"foo=bar" };
+		var id = "vaultdiv";
+		swfobject.createSWF(att, par, id);
+		firstrun = false
+	}
 }
 
 function animationcallback(){
-	document.body.style = "overflow: hidden;"
-	div.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 1;";
+	flashonscreen = !flashonscreen;
+	if (flashonscreen == true){
+		document.body.style = "overflow: hidden;"
+		div.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 1;";		
+	}
+	else{
+		document.body.style = "overflow: unset;"
+		setTimeout(5000);
+		document.body.removeChild(div);
+		canmakenewflash = true;
+	}
+}
+
+function opensite(whatlink){
+	window.open(whatlink, "_blank");
+}
+
+function removeflash(){
+	div.style = "background-color: #000000;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; opacity: 0; animation-name: fadeout; animation-duration: 1s; animation-fill-mode: forwards;";
 }
 
 </script>
