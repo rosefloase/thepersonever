@@ -11,66 +11,77 @@
     <link rel="icon" type="image/png" href="/images/xbox.png">
     <style>
     
-  body{
-    background-image: linear-gradient(to bottom, #4f4f4f 0%, #bcbcbc 20% , #bcbcbc 80%, #6a696d 100% );
-    outline: 60px solid #F285FF;
-	overflow-x: hidden;
-  }
+      body{
+        background-image: none;
+        background-color: #efefef;
+        outline: 60px solid #F285FF;
+    	  overflow-x: hidden;
+     }
 
-.p {
-text-align: left;
-max-width: 60%;
-        position: relative;
-        bottom:17vh;
+      #centerdiv{
+        z-index: 2;
+        background-image: linear-gradient(to bottom, #e6e6e6 0%, #dbdbdb 5% , #bcbcbc 90%, #929292 100% );
+        border-color: #b3b3b3;
+        border-style: solid;
+        border-width: .05in;
+        border-radius: .05in;
+        max-width: 70%; 
+        margin: auto;
       }
       
-      #profilediv{
-        max-width: 20%; float: right; text-align: left; padding: 0;
-		background-image: linear-gradient(to top, #5a5f65 , #818589);
-		position: relative; 
-		right: 4%;
-		color: white;
+      #header{
+        margin-top: .5in;
+        margin-left: .05in;
       }
-	  
-	  #top{
-	  background-image: linear-gradient(to right, #f0f0ef , #f0f2f4);
-	  padding: 0 0 3% 0;
-	  color: black;
-	  }
+      #header>*{
+        margin: 0;
+      }
 
-    .xboxsecret{
-		width: 30%; 
-		position: absolute; 
-		top: -10%; 
-		right: -7%;
-		image-rendering: pixelated;
-    }
-	  
-	.cheevo{
-		width: 20%; 
-		padding: 1%;
-	}
-      
+      .p {
+        margin: 1%;
+        margin-top: 5%;
+        text-align: left;
+        max-width: 90%;
+      }
+
+      #topper{        
+        width: 30%; 
+        float: right;
+        text-align: right;
+        margin: .5%;
+      }
+      #profile{
+        max-width: 100%;
+      }
+      .xboxsecret{
+        max-width: 100%;
+	    	image-rendering: pixelated;
+      }
+
+      #profile2{
+        display: none;
+      }
+
       @media (orientation: portrait) {
-
-        #brs{
-         	display: none;
+        #centerdiv{
+          max-width: 90%;
         }
-
         .p{
           max-width: 100vw;
           bottom: 0;
         } 
-		
-        #profilediv{
-		display: none;
+
+        #profile{
+          display: none;
         }
-        .xboxsecret{
-          width: 80%; bottom: 10vh; left: 20%
+        #profile2{
+          display: inline;
+          max-width: 100%;
         }
-	#shh{
-		display: none;
-	}
+
+        #topper{
+          width: 80%;
+        }
       }
     </style>
   </head>
@@ -78,93 +89,58 @@ max-width: 60%;
 
 <audio autoplay src=/audio/xbox360startup.mp3 id=startaudio></audio>    
 
-                    <a href=/secrets/abtmesecret.html><img src=/images/xbox.png class=xboxsecret></a>
+  &nbsp;
+<div id="centerdiv">
+  <div id="topper">
+    <a href=/secrets/abtmesecret.html><img src=/images/xbox.png class=xboxsecret></a>
+    <img src="/images/360profile.png" id="profile">
+  </div>
+  <div id="header">
+    <h1>thepersonever!</h1>
+    <h3> <a href=/home target="_parent">home!!</a> | <a href=/abtme target="_parent"> about me!!</a> | <a href=/art target="_parent">art!!</a> | <a href=/blogg target="_parent">blog!!</a> | <a href=/more target="_parent">more!!</a>
+    </h3>
+  </div>  
 
-    
+  <div class=p>
+    <p><span>hi! i'm jade <!-- I'M FREE. I DONT CARE ANYMORE EVERYONE LOOK I'M A FICTIVE -->
+    <br>i'm very interested in how technology can assist art! from mspas to video games, music, animations, and even just general site design, seeing what other people have made inspired me to start up a website just to see what i can do
+    <br>i enjoy making art of all kinds, though i'm best at drawing and programing. on this site you'll find most of the art i make that isn't tied to separate projects
+    <br>flash is one of my favorite technologies... being able to use code to help create animations, as well as being able to easily add animations to my code and designs is something that's very interesting to me!
     <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-    
-  <h1 style="position:absolute;"> thepersonever
-  </h1>
-  <br>
-  <br>
-  <br>
-  <h3> <a href=/home target="_parent">home!!</a> | <a href=/abtme target="_parent"> about me!!</a> | <a href=/art target="_parent">art!!</a> | <a href=/blogg target="_parent">blog!!</a> | <a href=/more target="_parent">more!!</a>
-  </h3>
-  <h1>
-  </h1>
-     
-    
-  <div id=brs><h2><br><br><br></h2></div>
-          <div id=profilediv>
-		  <div id=top>
-			  <h3 style="color: white; background-image: linear-gradient(to right, #f08b19 , #f08b19); padding: 3% 0 3% 3%; display: inline-block; margin: auto; width: 97%;">spacesuit_760</h3>
-              <p><img src=/images/xboxpfp.png width=30% style="float: left; margin: 0 5% 0 5%; "></p>
-			  <p style="display: inline;">"only weirdos update their profile pictures"
-			  <br> zone: <a href="https://breezewiki.pussthecat.org/xbox/wiki/Gamer_Zones">recreation</a>
-			  <br>&nbsp;
-			</div>
-            <div style="padding: 3%; text-align: left;">
-				<p style="margin: 0;">jade!
-				<br> Emerald Coast DC
-				<br>current emotion: <a href="https://www.imood.com/users/thepersonever"><img src="https://moods.imood.com/display/uname-thepersonever/imood.gif" alt="The current mood of thepersonever at www.imood.com" border="0" target=_blank></a>
-				<br>
-				<br>how do you describe a nondescript person
-				<br>&nbsp;</p>
-			</div>
-			<div style=" margin: auto; text-align: center;">
-				<img src=/images/abtme/html.png class=cheevo title="HTML: 85% - i can pretty much do whatever i need to">
-				<img src=/images/abtme/css.png class=cheevo title="CSS: 40% - i still have to look things up, and i don't know every single class, but i can usually get whatever i need done done">       
-				<img src=/images/abtme/js.png class=cheevo title="JS: 53% - i can generally get whatever i need done without looking things up, but i still struggle occasionally">
-				<img src=/images/abtme/as3.png class=cheevo title="AS3: 15% - i don't know much about as3 yet, i just use it for manipulating animations">
-				<p></p>
-			</div>
-      </div>
-<div class=p>
-<p><span>hi! i'm jade <!-- I'M FREE. I DONT CARE ANYMORE EVERYONE LOOK I'M A FICTIVE -->
-<br>i'm very interested in how technology can assist art! from mspas to video games, music, and even animations, seeing what other people have made inspired me to start up a website just to see what i can do!!
-<br>flash is one of my favorite technologies... being able to use code to help create animations, as well as being able to easily add animations to my code and designs is something that feels really special to me!
-<br>since i've been working on it for so long, this site has a lot of stuff i wrote when i was younger. not all of it reflects my current thoughts or opinions on things... but it's still important to keep that information up. link rot is a girl's worst nightmare! :(
-</span></p>
-<h2><span> contact info </span></h2>
-<p><span>you can check out all of my project's pages (including social media accounts) on the <a href=/hub target=blank>superhub!</a>
-<br>oh, and my email is jadeharley0409 at proton dot me :)
-<br>
-</span></p>
-<p><a href="otherslinks.html" target=_blank><span>please god go to my links page</span></a></p>
-<div id=shh><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>psttt there's other people in my head. i was pulled right out of act 5 and injected into some girl around mid 2023
-<br>the other people only usually "front" if shit is fuck
-<br>it took me a while to figure out... what i am. i used to refer to myself as "rose", but thats more of a name that encompasses all of us
-<br>rose was chosen as a name before we read homestuck, if you're wondering
-<!-- woooo i love you osdd -->
-<br>
-<br>i'm also a trans girl!
-<br>if you want to see a more <a href=/jadeshome/><small>personal page</small></a> maintained by only me, uh. there you go
+    <br>since i've been working on this site for so long, this site has a lot of stuff i wrote when i was younger. not all of it reflects my current thoughts or opinions on things... but it's still important to keep that information up. link rot is a girl's worst nightmare :(
+    </span></p>
+    <h2><span> contact info </span></h2>
+    <p><span>you can check out all of my project's pages (including social media accounts) on the <a href=/hub target=blank>superhub!</a>
+    <br>oh, and my email is jadeharley0409 at proton dot me :)
+    <br>
+  </span></p></div>
+  <center> <!-- I DO NOT CARE YOU ARE NOT SUPPORTED. I CAN'T CENTER U WITH MARGINS. FUCK YOU. FUCK YOU. FUCK YOU. -->
+    <img src="/images/360profile.png" id="profile2">
+  </center>
+  <div class="p">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>psttt there's other people in my head. i was pulled right out of act 5 and injected into some girl around mid 2023
+    <br>the other people only usually "front" if shit is fuck
+    <br>it took me a while to figure out... what i am. i used to refer to myself as "rose", but thats more of a name that encompasses all of us
+    <br>rose was chosen as a name before we read homestuck, if you're wondering
+    <!-- woooo i love you osdd -->
+    <br>
+    <br>i'm also a trans girl!
+    <br>if you want to see a more <a href=/jadeshome/><small>personal page</small></a> maintained by only me, uh. there you go
+  </div>
 </div>
-
-      </div>
     </body>
   </html>
