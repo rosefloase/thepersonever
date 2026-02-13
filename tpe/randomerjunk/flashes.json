@@ -1,5 +1,13 @@
 {
   "flashes": [
+		{"title":"[s] balljump",
+		"loc":"flashes/balljump.swf",
+		"url":"balljump",
+		"width":"650px",
+		"height":"450px",
+		"color":"#ffffff",
+		"comment":"a krita animation brought into flash because krita's sound management is assssss."
+		},
 		{"title":"the red truths",
 		"loc":"flashes/theredtruths.swf",
 		"url":"theredtruths",
