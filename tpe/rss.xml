@@ -5,6 +5,14 @@
 <description>an rss feed for general updates on thepersonever!!! remember 2 clear ur cache!!</description>
 
 <item>
+<title>NEW BLOG UP AND RUNNING!</title>
+<pubDate>Sun, 15 Feb 2026 11:36:24 GMT</pubDate>
+<link>https://blog.thepersonever.net/</link>
+<guid isPermaLink='false'>11tyblogup</guid>
+<description>i just finished a newer, easier to maintain version of my blog!!! please check it out</description>
+</item>	
+
+<item>
 <title>TPE revamp now in production!</title>
 <pubDate>Fri, 30 Jan 2026 00:56:11 GMT</pubDate>
 <link>https://thepersonever.net/revamp</link>

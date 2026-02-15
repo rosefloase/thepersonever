@@ -55,7 +55,7 @@ function whatlink(asdf){
 			window.location.href = "/art";
 		break;
 		case "blog":
-			window.location.href = "/blogg";
+			window.location.href = "https://blog.thepersonever.net/";
 		break;
 		case "more":
 			window.location.href = "/more";
