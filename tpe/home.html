@@ -27,14 +27,35 @@
     <link rel="icon" type="image/jpg" href="/homeicon.jpg">
     <style>
     body {
-	  background-image: url(/images/bggif.gif);
+	  background-image: url(/images/motionlessbg.gif);
 	  outline: 60px solid #F285FF;
-	  overflow-x: hidden; 
+	  overflow-x: hidden;
 	  image-rendering: pixelated;
 	}
 
 	body > *{
 		image-rendering: unset;
+	}
+
+	#middle{
+	height:120vh;
+    width:43%;
+    z-index:-5;
+    background-color: white;
+    background-image: url("/images/paper.png");
+    overflow: scroll;
+	}
+
+	.sideiframe{
+	    height: 4in;
+        z-index:9;
+        position: relative;
+    }
+
+	#news{
+	    background-image: url("/images/news.jpg");
+		text-align: left;
+		overflow: scroll;
 	}
 
 .PikRing {
@@ -61,23 +82,11 @@
   aspect-ratio: 2.12/1;
 
 }
- 
- .sideiframe{
-   height:400px;
-    z-index:9;
-    position: relative;
- }
-      
+
 .sifdiv{
   width: 27%;
 }
-      
-.centeriframe{
-  height:120vh;
-  width:43%; 
-  z-index:-5;
-}
-      
+
 .lankscontainer{
   background-color: white;
   background-image: url(yeah.png);
@@ -85,7 +94,7 @@
   height:8%;
   width:18%;
   top: 50%;
-  right: 11%;
+  right: 5%;
   border: 3px solid black;
   position:absolute;
   z-index: 2;
@@ -126,20 +135,20 @@
 	<script src="https://iframe.chat/scripts/main.min.js"></script>
   </head>
   <body>
-  
+
 <!--  <audio autoplay src=/audio/siteopen2.mp3 id=startaudio></audio> -->
-  
+
   <center>
   <br>
-  
-<a href="secrets/writingtut/"><img src=/thekritaever.png class="biglogo"></a>
-  
+
+<a><img src=/thekritaever.png class="biglogo"></a>
+
   <br>
   <br>
-  
+
   <iframe src="/iframes/bar.html" id=oldnav></iframe>
-  
-  
+
+
   <!-- blinkies -->
                 <img class=abimg src=/images/mytrains.gif>
                 <img class=abimg src=/images/bestbuds.gif>
@@ -170,15 +179,26 @@
 				<img src="/images/pixelbrush.gif" title="go 2 thumtacka.nekoweb.org. please">
 
 <!-- end of blinkies -->
-  
+
   <br>
   <br>
-  
+
 <!-- start of stamps -->
-         
+
   <div class=sifdiv style="float: left;">
 	  <br><br><br>
-  <iframe id=news src="/iframes/news.html" class=sideiframe style="width: 100%;" scrolling="yes" frameBorder="0" ></iframe>
+  <div id=news class=sideiframe style="width: 100%;">
+    <h3><span> site news!!</span></h3>
+	<p><span>finished my new <a href="https://blog.thepersonever.net/" target="_parent">blog :DDD</a>
+      <br>started work on <a href=/revamp target=_parent>revamp!</a>
+		<br>added TWO new pieces of digital art to the <a href=/randomerjunk/art target=_parent>art page</a>...
+		<br><a href=/xdx3xp/tracks?song=sayonara target=_parent>NEW SONG!!!!!!!!</a>
+		</span>
+		<br><small><span>pst. want updates? follow the <a href=https://thepersonever-site-updates.tumblr.com/ target=_blank><small>offical tumblr</small></a> or get the <a href=/rss.xml target=_blank><small>tpe rss feed</small></a>! <a href="http://www.rssboard.org/rss-validator/check.cgi?url=https%3A//thepersonever.net/rss.xml" target=_blank><small>[VALIDATE]</small></a></span></small>
+      </p>
+  </div>
+
+
     <div class=stamp style="float: left;">
    <br><img src=/images/stamp3ds.gif>
    <br><img src=/images/stamperror.png>
@@ -192,10 +212,10 @@
     </div>
     </div>
   <div class=sifdiv style="float: right;">
-	  <br><br><br>
-  <iframe src="https://my.cbox.ws/thechatboxever" class=sideiframe scrolling="yes" style="width: 100%;" ></iframe>
-  <!-- <iframe src="https://iframe.chat/embed?chat=52088125" id='chattable' class=sideiframe scrolling="yes" style="width: 100%;" ></iframe> -->
+	  <br>
+  <iframe src="https://my.cbox.ws/thechatboxever" class=sideiframe scrolling="yes" style="width: 100%;" frameborder="0" ></iframe>
 <div class=stamp style="float: right;">
+    <br>
 <br><img src=/images/stampdaretobestupid.gif>
 <br><img src=/images/berryboo.gif>
 <br><img src=/images/stamplovewii.gif>
@@ -206,19 +226,53 @@
 <br><img src=/images/UJLstamp.png>
 <br><img src=/images/tal.png title="there is no port">
 </div>
-    </div>  
+    </div>
     <p><span>you people don't look at my links page so whatever button is <a href=/thepersoneverbutton.gif target=_blank>here</a> and guestbook is <a href=https://thepersonever.atabook.org/ target=_blank>here</a></span></p>
-  <p><iframe id=middle src=/iframes/newcenter.html class=centeriframe style="overflow: scroll;" frameBorder="0"></iframe></p>
+    <div id="middle">
+        <h1><span>home!!</span></h1>
+        <h3><span><em>best viewed on a sunny day near a window</em></span></h3>
+        <p><span>hi! i'm kinda stupid</span></p>
+        <p><span>i started working on this site back in late 2022 because "i was super bored one summer and kinda wanted to get back into coding..." even though i never really got into coding before. before i started this site, i was apparently gifted a barnes and noble "how to code!!!" book and a raspberry pi, but i never really did much with either thing...
+            <br>anyways
+            <br>originally, this site was hosted on neocities! after seeing a few neocities sites, and trying out the html tutorial there, i was motivated to make my own website :D
+            <br>melon's site was a huge inspiration for me in the early days of TPE. with how many pages, secrets and silly things there were, i wanted my site to be just as cool as his!!
+            <br>i set up some things that seemed like websites within my main site. the first of which - inspired by transrats - was called "random junk"! the second was xDx3xP, made so i could show off music projects
+            <br>i was praised by one person in... (either my chatbox or guestbook? i forgot which one) for having multiple "subsites", and thus i began to make more and <i>more</i>
+            <br>making so many webpages, my site grew at a rapid pace. custom pikmin 2 piklopedia! plans to cover everything homestuck!! a buggy, unresponsive, hard to maintain room tour made with pure javascript!!!
+            <br>however, as time went on... my old writing seemed more and more childish. feeling like i couldn't give more attention to one page than any others, i did what any reasonable person would do!
+            <br>
+            <br>i abandoned my site!
+            <br>
+            <br>however, i came back late 2024... due to having a lot of downtime in school. with one blog post and an update to the art page, i vaulted three of my subsites... thus reducing the load on keeping important pages up-to-date with my current writing style. this didn't really sit right with me though, so i created the vault flash in october of 2024, which is present on the art page today
+            <br>i also switched from neocities to nekoweb, due to the founder of neocities seeming to support generative ai garbage. preemptive responses to possible data scraping are the best responses!
+            <br>
+            <br>one of the main reasons i've maintained this site for so long is because i just. love making stuff! i used to say that i thought of this website as an "ongoing thing, so i can like look at what i have done and be like 'oh yeah ive been doing something with my life' rather than just spending all of my days on social media" (which is still true)
+            <br>even when taking a break from this site, i worked on other art and coding projects, like <a href="https://psfla.net/" target=_blank>psfla.net</a>! working with web technology is my hobby, as making art with computers is my biggest interest :D
+            <br>
+            <br>also  i have an outgoing links page!!! look for a link called "cool links" on this page, or find the page in more :P
+            <br>my button is there too
+        </span></p>
+
+        <img src=/images/lduserbox.PNG width=200px>
+        <img src=/images/wwuserbox.PNG width=200px>
+        <img src=/images/CHEATED.png width=200px>
+
+        <p style="text-align: left; margin: auto;"><small><span>this second's old, outdated, randomized text:</span></small>
+        <br><asdf id=rtext></asdf></p>
+
+        <script src=/js/rlyrics.js>
+        </script>
+    </div>
 
 <!-- end of stamps -->
-      
+
   <br>
   <br><a href="/sitemap.html"><span>sitemap that's existent!</span></a>
   <br><a href=https://thepersonever-site-updates.tumblr.com/ target=_blank><span>update blog!</span></a>
   <br><a href=https://downloads.thepersonever.net/backup target=_blank><span> archives...</span></a>
     <br><a href=oldhome><span>old version of this homepage!</span></a>
   <br>
-  
+
   <br>
 
 <!-- webrings start -->
@@ -237,7 +291,7 @@
 			<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="158,10,170,30" alt="random" title="random">
 			<area href="https://baccyflap.com/noai/?nxt&s=tpe" target="_top" shape="rect" coords="138,42,170,58" alt="next" title="next">
 		</map>
-		<img style="width:176px;image-rendering:pixelated" usemap="#noaimini13b" src="https://baccyflap.com/noai/miniwidget13.gif" alt="a black field showing the words THE NO AI WEBRING in gothic lettering, with the word NO in blood red. there are two slender arrows pointing left and right and one gray question mark (also gothic)"> 
+		<img style="width:176px;image-rendering:pixelated" usemap="#noaimini13b" src="https://baccyflap.com/noai/miniwidget13.gif" alt="a black field showing the words THE NO AI WEBRING in gothic lettering, with the word NO in blood red. there are two slender arrows pointing left and right and one gray question mark (also gothic)">
 	</div>
 	<div id='doodlering' style="display: inline-block; float: right;">
     	<script type="text/javascript" src="https://evehibi.nekoweb.org/doodlering/onionring-variables.js"></script>
@@ -247,61 +301,51 @@
 </div>
 	<div style="display: inline-block; width: 30%">click here to<a href="https://ko-fi.com/thepersonever"><small>MONEY GIVE ME MONEY</small></a>
 	</div>
-  
+
   <!-- webrings end -->
-  
+
   <p style="z-index: 2; position: relative;"><span><a href=c-cgl-1-1.txt>(C+CGL)</a> 2022 - 2026 "iamarandompikachu"/"rosefloase" for website design, like a 4th of the graphics, almost all writing, and a few sounds. this license extends to anything in the "thepersonever.neocities.org/", "thepersonever.nekoweb.org/" and "thepersonever.net/" domains, as well as any original content in the "rosefloase.github.io/tperesources/" and "downloads.thepersonever.net/" domains! (copying isn't an "act of hate" edit my site all you want)</span></p>
-  <br> 
-    
+  <br>
+
   <!-- image start -->
   <!-- "videos" -->
-<div style="position: absolute; top: 0px; left: 0px; height: 30%;" class=abimg>
-<video preload="auto" onclick=playHAHA() src=/tests/recieptprinter.webm id=printer style="display: inline; cursor: pointer;" height=100%></video>
-<video preload="auto" onclick=playHAHA() src=/tests/pokohide.webm id=hider style="display: none; cursor: pointer;" height=100%></video>
+<div style="position: absolute; top: 0px; left: 6%; height: 30%;" class=abimg>
+    <video preload="auto" onclick=playHAHA() src=/tests/recieptprinter.webm id=printer style="display: inline; cursor: pointer;" height=100%></video>
+    <video preload="auto" onclick=playHAHA() src=/tests/pokohide.webm id=hider style="display: none; cursor: pointer;" height=100%></video>
 </div>
     <!-- normal images -->
-    <a href=pikasecret class=abimg><img src=/pikachu.gif height=14% style="position: absolute; top: 48vh; left: 20vw; z-index:50;"></a>
-<img src=/images/popup.gif height=15% class=abimg style="background-color: white;position: absolute; top:54%; left: 14%; z-index: -2;">
-  <img src=/images/john.png class=abimg style="position: absolute; top: 36%; left: 16%; z-index: -1;" height=19%>
-    <img src=/images/notme.png class=abimg style="position: absolute; top: 20.5vh; left: 15.9vw; z-index: -1;" height=19%>
-  <img src=/images/dave.png class=abimg style="position: absolute; top: 4vh; left: 16.5vw; z-index: -1;" height=19%>
-  <img src=/images/jade.gif class=abimg style="position: absolute; top: -18vh; left: 16vw;" height=25% title="me">
-<img src=/pikmin/enemies/images/pikmin/clayblue.png class=abimg style="position: absolute; top: 70vh; left: 4vw; z-index: 1;" height=17%>
-<img src=/images/GUB.png class=abimg style="position: absolute; top: 46%; left: 18.5%; z-index: -10;" height=15%>
-<img src=/images/chaowalk.gif class=abimg height=15% style="position: absolute; right: 14%; top: 38%;">
-<img src=/images/sboyrb.png class=abimg style="position: absolute; top: 64%; left: 6%;" height=16% title="currently fighting the homestuck (and losing)">
-<img src=/images/dinogif.webp class=abimg style="position: absolute; top: 2%; right: 16%; z-index: 2;" height=10%>
-<img src=/images/smiledraw.gif class=abimg height=15% style="position: absolute; top: 22%; left: 1%;">
-<img src=/images/howtolive.png class=abimg style="position: absolute; top: 12%; right: 5%; z-index: -1; height: 25%;">
-<img src=/images/shadowspin.gif class=abimg height=23% style="position: absolute; top: 24%; left: 5%; z-index: -11;">
-<img src=/images/gameboy.gif class=abimg height=20% style="position: absolute; top: 2%; left: 22%; z-index: -5;">
-<img src=/images/onion.png class=abimg style="position: absolute; top: 30%; right: 10%; z-index: 0;" height=25%>
+<img src=/images/collect.png class=abimg height=12% style="position: absolute; top: 40%; left: 4%; z-index: -100;">
+<a href=pikasecret class=abimg><img src=/pikachu.gif height=14% style="position: absolute; top: 48vh; left: 8vw; z-index:50;"></a>
+<img src=/images/GUB.png class=abimg style="position: absolute; top: 46%; left: 9vw; z-index: -10;" height=15%>
 
-   
+<img src=/pikmin/enemies/images/pikmin/clayblue.png class=abimg style="position: absolute; top: 70vh; left: 4vw; z-index: 1;" height=17%>
+<img src=/images/chaowalk.gif class=abimg height=15% style="position: absolute; right: 3%; top: 38%;">
+<a href="https://needlejuicerecords.com/products/dinosaurchestra-deluxe-2-cd-set" target="_blank"><img src=/images/dinogif.webp class=abimg style="position: absolute; top: 40%; right:10%; z-index: 2;" height=10%></a>
+<img src=/images/howtolive.png class=abimg style="position: absolute; top: 12%; right: 5%; z-index: -1; height: 25%;">
+
+
     <!-- multi-image elements -->
-<div class=abimg style="width: 10%; height: 30%; position: absolute; top: 64%; right: 7%;">
-<img src=/images/cd.gif height=40% style="position: absolute; top: 30%; right: 0px;">
-<img src=/images/sonicrunning.gif height=30% style="position: absolute; top:1%; right:3%;">
-</div>
-    
-<div class=lankscontainer> 
+<div class=lankscontainer>
 <a href=https://kirby.fandom.com/wiki/Keeby target=_blank><img src=images/keeby.webp height=50%  style="position: absolute; bottom: 0px; left: 0px;" alt=keeby title=keeby></a>
 <a href=otherslinks.html style="float: right; font-size: 45px;"><em> cool sites!!</em></a>
 </div>
-    
-<img src=/images/MARIOTV.gif class=abimg style="position: absolute; top: 50vh; left: 23vw; z-index: -1;" height=12%>
-<img src=/pikmin/shower.png class=abimg style="position: absolute; top: 51vh; left: 23.5vw; z-index: 30;" height=8%>
-    
+
+<img src=/images/MARIOTV.gif class=abimg style="position: absolute; top: 50vh; left: 12vw; z-index: -1;" height=12%>
+<img src=/pikmin/shower.png class=abimg style="position: absolute; top: 51vh; left: 12.5vw; z-index: 30;" height=8%>
+
+<img src=/images/popup.gif height=15% class=abimg style="background-color: white;position: absolute; top:54%; left: 1%; z-index: -2;">
+<img src=/images/john.png class=abimg style="position: absolute; top: 36%; left: 1.5%; z-index: -1;" height=19%>
+<img src=/images/notme.png class=abimg style="position: absolute; top: 20.5vh; left: 1.7%; z-index: -1;" height=19%>
+<img src=/images/dave.png class=abimg style="position: absolute; top: 4vh; left: 2.5%;" height=19%>
+<img src=/images/jade.gif class=abimg style="position: absolute; top: -18vh; left: 2%;" height=25% title="me">
+
     <!-- (most) link images -->
-<a href="https://www.youtube.com/c/Pikman6000/videos" class=abimg target=_blank> <img src=/images/engie.gif height=17% style="position:absolute; top: 45vh; left:5vw; z-index: -10;" title="PIKMIN!!!!!!"></a>
-<a href=/partay.html class=abimg><img src=/images/Mouse.png class=abimg height=9.5% style="position: absolute; top:41vh; left: 26.5vw; z-index: 19; -webkit-transform: scaleX(-1); transform: scaleX(-1);"></a>
-<a href="https://bloodhouse.neocities.org/index_2"><img src=/images/child.png class=abimg height=14.5% style="position: absolute; top: 37vh; left: 22vw; z-index: 20;"></a>    
+<a href="https://bloodhouse.neocities.org/index_2"><img src=/images/child.png class=abimg height=14.5% style="position: absolute; top: 37vh; left: 11.5vw; z-index: 20;"></a>
+<a href=/partay.html class=abimg><img src=/images/Mouse.png class=abimg height=9.5% style="position: absolute; top:41vh; left: 16.5vw; z-index: 19; -webkit-transform: scaleX(-1); transform: scaleX(-1);"></a>
 <a href="https://pfq.link/?50kGR" target=_blank><img src="https://pfq.link/?50kGR=party_oras.png" class=abimg style="position: absolute; top: 0; right: 4.1%; z-index: 2;" height=9%></a>
-<a href=secrets/backpack.html class=abimg><img src=/images/backpack.jpeg height=13% style="position: absolute; top:39%; right: 24%; z-index: -1;"></a>
-<a href=nutshell.html class=abimg><img src=/images/wallnut.png class=abimg height=20% style="position: absolute; top: 36%; right: 17%; z-index: 9;"></a>
-<a href="/pikmin/" class=abimg><img src=/images/collect.png height=12% style="position: absolute; top: 38%; right: 5.3%; z-index: 2;"></a>
+<a href=nutshell.html class=abimg><img src=/images/wallnut.png class=abimg height=20% style="position: absolute; top: 36%; right: 16%; z-index: 9;"></a>
   <!-- image end -->
-  
+
 	<!--# include file="flashes/navbar/end.html" -->
 <script defer src=/webring/flash/widget.js></script>
 
@@ -312,9 +356,9 @@
 	</div>
 
   </center>
-  
+
   <script src=js/newhome.js>
   </script>
-  
+
   </body>
 </html>
