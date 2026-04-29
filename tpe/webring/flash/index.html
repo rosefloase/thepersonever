@@ -127,7 +127,14 @@ float: right; max-width: 48%; width: justify; text-align: right;
 		</div>
 	</div>
 	<br><p><a href=https://lucastheguy.nekoweb.org/ target=_blank><span>lucastheguy.nekoweb.org</span></a></p>
+	<div id="swfwrapper">
+		<div id=tails>
+		</div>
+	</div>
+	<br><p><a href=https://termotanquedeleche.neocities.org/ target=_blank><span>termotanquedeleche.neocities.org</span></a></p>
 </p>
+
+
 
 <script>
 
@@ -139,7 +146,8 @@ let webring = {
     "https://saturnbuddy.com/",
     "https://zeroxmachine.xo.je/",
     "https://baccyflap.com/",
-    "https://lucastheguy.nekoweb.org"
+    "https://lucastheguy.nekoweb.org",
+    "https://termotanquedeleche.neocities.org"
   ]
 }
 
@@ -149,7 +157,8 @@ function callbackfunction(){
 	makeswf("saturnbuddy.com", "https://thepersonever.net", "https://zeroxmachine.xo.je", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "saturnbuddy");
 	makeswf("zeroxmachine.neocities.org", "https://saturnbuddy.com", "https://baccyflap.com", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "xeroxmachine");
 	makeswf("baccyflap.com", "https://zeroxmachine.neocities.org", "https://lucastheguy.nekoweb.org", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "baccyflap");
-	makeswf("lucastheguy.nekoweb.org", "https://baccyflap.com", "https://thepersonever.net", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "lucastheguy");
+	makeswf("lucastheguy.nekoweb.org", "https://baccyflap.com", "https://termotanquedeleche.neocities.org/", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "lucastheguy");
+	makeswf("termotanquedeleche.neocities.org", "https://lucastheguy.nekoweb.org", "https://thepersonever.net/", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "tails");
 }
 
 function makeswf(NAME, PREV, NEXT, RANDO, ID){
