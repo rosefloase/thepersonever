@@ -9,7 +9,8 @@ webring = {
     "https://thepersonever.net/",
     "https://saturnbuddy.com/",
     "https://zeroxmachine.xo.je/",
-    "https://baccyflap.com/"
+    "https://baccyflap.com/",
+    "https://lucastheguy.nekoweb.org/"
   ],
 
   // html inserted as your widget

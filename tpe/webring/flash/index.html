@@ -35,13 +35,13 @@ float: right; max-width: 48%; width: justify; text-align: right;
 		font-size: 0.5in;
 	}
 	.leftdiv{
-		max-width: 100%; width: unset; float: unset; 
+		max-width: 100%; width: unset; float: unset;
 	}
 	.rightdiv{
-		max-width: 100%; width: unset; float: unset; 
+		max-width: 100%; width: unset; float: unset;
 	}
   }
-  
+
   #swfwrapper{
   width: 300px; height: 300px; overflow: hidden; float: right; display: inline;
   }
@@ -122,6 +122,11 @@ float: right; max-width: 48%; width: justify; text-align: right;
 		</div>
 	</div>
 	<br><p><a href=https://baccyflap.com/ target=_blank><span>baccyflap.com</span></a></p>
+	<div id="swfwrapper">
+		<div id=lucastheguy>
+		</div>
+	</div>
+	<br><p><a href=https://lucastheguy.nekoweb.org/ target=_blank><span>lucastheguy.nekoweb.org</span></a></p>
 </p>
 
 <script>
@@ -133,7 +138,8 @@ let webring = {
     "https://thepersonever.net/",
     "https://saturnbuddy.com/",
     "https://zeroxmachine.xo.je/",
-    "https://baccyflap.com/"
+    "https://baccyflap.com/",
+    "https://lucastheguy.nekoweb.org"
   ]
 }
 
@@ -142,7 +148,8 @@ function callbackfunction(){
 	makeswf("thepersonever.net", "https://baccyflap.com", "https://saturnbuddy.com", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "swfdiv");
 	makeswf("saturnbuddy.com", "https://thepersonever.net", "https://zeroxmachine.xo.je", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "saturnbuddy");
 	makeswf("zeroxmachine.neocities.org", "https://saturnbuddy.com", "https://baccyflap.com", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "xeroxmachine");
-	makeswf("baccyflap.com", "https://zeroxmachine.neocities.org", "https://thepersonever.net", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "baccyflap");
+	makeswf("baccyflap.com", "https://zeroxmachine.neocities.org", "https://lucastheguy.nekoweb.org", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "baccyflap");
+	makeswf("lucastheguy.nekoweb.org", "https://baccyflap.com", "https://thepersonever.net", (webring.sites[Math.floor(Math.random() * webring.sites.length)]), "lucastheguy");
 }
 
 function makeswf(NAME, PREV, NEXT, RANDO, ID){
@@ -153,7 +160,7 @@ function makeswf(NAME, PREV, NEXT, RANDO, ID){
 		}
 </script>
 
-</div>	
+</div>
 
 	</body>
 </html>
