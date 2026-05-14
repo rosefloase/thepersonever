@@ -171,9 +171,15 @@ function computer2026() {
   document.getElementById("hide").style.display = "inline";
   document.getElementById("div").style.backgroundImage =
     "url(/images/dexter.jpg)";
+  document.getElementById("div").style.backgroundImage ="none";
+
+  document.getElementById("div").style.backgroundColor ="black";
   document.getElementById("div").style.backgroundSize = "cover";
   document.getElementById("innerbleh").innerHTML =
-    `<h2><span>first slrt of 2026</span></h2> <img src=/images/slrt2026.png width=500>
+    `
+    <h2><span>taken for granted</span></h2> <img src=/images/light.png width=500>
+    <h2><span>you can't have it all, dexter morgan</span></h2> <img src=/images/dexter.png width=500>
+    <h2><span>first slrt of 2026</span></h2> <img src=/images/slrt2026.png width=500>
 
 `;
 }
