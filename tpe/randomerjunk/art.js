@@ -177,8 +177,9 @@ function computer2026() {
   document.getElementById("div").style.backgroundSize = "cover";
   document.getElementById("innerbleh").innerHTML =
     `
-    <h2><span>taken for granted</span></h2> <img src=/images/light.png width=500>
+    <h2><span>gone, gone, thank you</span></h2> <img src=/images/lightalt.png width=500>
     <h2><span>you can't have it all, dexter morgan</span></h2> <img src=/images/dexter.png width=500>
+    <h2><span>asked to make a new trollsona</span></h2> <img src=/images/lybree.png width=500>
     <h2><span>first slrt of 2026</span></h2> <img src=/images/slrt2026.png width=500>
 
 `;
@@ -216,6 +217,7 @@ function computer2023() {
   document.getElementById("div").style.backgroundImage =
     "url(/images/shadowspin.gif)";
   document.getElementById("div").style.backgroundSize = "500px";
+  document.getElementById("div").style.backgroundColor ="unset";
 }
 
 function computer2022() {
@@ -229,9 +231,10 @@ function computer2022() {
 
 function computerolder() {
   document.getElementById("innerbleh").innerHTML =
-    "<h1>stuff i made when i was 11-12</h1><br><br><img src=/images/olds/45.png>  <br><img src=/images/olds/44.png>  <br><img src=/images/olds/43.png>  <br><img src=/images/olds/42.png>  <br><img src=/images/olds/41.png>  <br><img src=/images/olds/40.png>  <br><img src=/images/olds/39.png>  <br><img src=/images/olds/38.png>  <br><img src=/images/olds/37.png>  <br><img src=/images/olds/36.png>  <br><img src=/images/olds/35.png>  <br><img src=/images/olds/34.png>  <br><img src=/images/olds/33.png>  <br><img src=/images/olds/32.png>  <br><img src=/images/olds/31.png>  <br><img src=/images/olds/30.png>  <br><img src=/images/olds/29.png>  <br><img src=/images/olds/28.png>  <br><img src=/images/olds/27.png>  <br><img src=/images/olds/26.png>  <br><img src=/images/olds/25.png>  <br><img src=/images/olds/24.png>  <br><img src=/images/olds/23.png>  <br><img src=/images/olds/22.png>  <br><img src=/images/olds/21.png>  <br><img src=/images/olds/20.png>  <br><img src=/images/olds/19.png>  <br><img src=/images/olds/18.png>  <br><img src=/images/olds/17.png>  <br><img src=/images/olds/16.png>  <br><img src=/images/olds/15.png>  <br><img src=/images/olds/14.png>  <br><img src=/images/olds/13.png>  <br><img src=/images/olds/12.png>  <br><img src=/images/olds/11.png>  <br><img src=/images/olds/10.png><br><img src=/images/olds/9.png>  <br><img src=/images/olds/8.png>  <br><img src=/images/olds/7.png>  <br><img src=/images/olds/6.png>  <br><img src=/images/olds/5.png>  <br><img src=/images/olds/4.png>  <br><img src=/images/olds/3.png>  <br><img src=/images/olds/2.png>  <br><img src=/images/olds/1.png> ";
+    "<h1><span>stuff we made when we were 11-12</span></h1><br><br><img src=/images/olds/45.png>  <br><img src=/images/olds/44.png>  <br><img src=/images/olds/43.png>  <br><img src=/images/olds/42.png>  <br><img src=/images/olds/41.png>  <br><img src=/images/olds/40.png>  <br><img src=/images/olds/39.png>  <br><img src=/images/olds/38.png>  <br><img src=/images/olds/37.png>  <br><img src=/images/olds/36.png>  <br><img src=/images/olds/35.png>  <br><img src=/images/olds/34.png>  <br><img src=/images/olds/33.png>  <br><img src=/images/olds/32.png>  <br><img src=/images/olds/31.png>  <br><img src=/images/olds/30.png>  <br><img src=/images/olds/29.png>  <br><img src=/images/olds/28.png>  <br><img src=/images/olds/27.png>  <br><img src=/images/olds/26.png>  <br><img src=/images/olds/25.png>  <br><img src=/images/olds/24.png>  <br><img src=/images/olds/23.png>  <br><img src=/images/olds/22.png>  <br><img src=/images/olds/21.png>  <br><img src=/images/olds/20.png>  <br><img src=/images/olds/19.png>  <br><img src=/images/olds/18.png>  <br><img src=/images/olds/17.png>  <br><img src=/images/olds/16.png>  <br><img src=/images/olds/15.png>  <br><img src=/images/olds/14.png>  <br><img src=/images/olds/13.png>  <br><img src=/images/olds/12.png>  <br><img src=/images/olds/11.png>  <br><img src=/images/olds/10.png><br><img src=/images/olds/9.png>  <br><img src=/images/olds/8.png>  <br><img src=/images/olds/7.png>  <br><img src=/images/olds/6.png>  <br><img src=/images/olds/5.png>  <br><img src=/images/olds/4.png>  <br><img src=/images/olds/3.png>  <br><img src=/images/olds/2.png>  <br><img src=/images/olds/1.png> ";
   document.getElementById("hide").style.display = "inline";
   document.getElementById("div").style.backgroundImage = "none";
+  document.getElementById("div").style.backgroundColor ="unset";
 }
 
 function hide() {
