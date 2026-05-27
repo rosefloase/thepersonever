@@ -4,6 +4,7 @@ function paper2026() {
     "url(images/awesomepaper.jpg)";
   document.getElementById("div").style.backgroundSize = "100%";
   document.getElementById("innerbleh").innerHTML = `
+    <h2><span>whatever man<span></h2> <img src=/images/pedophile.png width=500px>
     <h2><span>A DIGITAL SKETCH!!!!!!!!!! HORRIBLE. EXECUTE THIS WOMAN</span></h2> <img src=/images/veronicadoodles.png width=500px>
     <h2><span>body :tongue:</span></h2> <img src=https://downloads.thepersonever.net/general/5.jpg width=500px>
     <h2><span>awwww... i guess that's how</span></h2> <img src=https://downloads.thepersonever.net/general/4.jpg width=500px>
