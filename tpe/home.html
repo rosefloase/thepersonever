@@ -26,18 +26,24 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/jpg" href="/homeicon.jpg">
     <style>
-    body {
-	  background-image: url(/images/motionlessbg.gif);
-	  outline: 60px solid #F285FF;
-	  overflow-x: hidden;
-	  image-rendering: pixelated;
+	body{
+		background-image: url(/images/motionlessbg.gif);
+	  	image-rendering: pixelated;
 	}
+	
+    #FUCKINGEVERYTHING{
+	  z-index: -100;
+	  background-size: cover;
+	  outline: 60px solid #F285FF;
+	  overflow: hidden;
+	}
+
     .abimg{
 	z-index: 10;
 	position: relative;
     }
 
-	body > *{
+	#FUCKINGEVERYTHING > *{
 		image-rendering: unset;
 	}
 
@@ -139,6 +145,7 @@
 	<script src="https://iframe.chat/scripts/main.min.js"></script>
   </head>
   <body>
+	  <div id=FUCKINGEVERYTHING>
 
 <!--  <audio autoplay src=/audio/siteopen2.mp3 id=startaudio></audio> -->
 
@@ -363,6 +370,7 @@
 
   <script src=js/newhome.js>
   </script>
+	  </div>
 
   </body>
 </html>
