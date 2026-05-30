@@ -1,0 +1,39 @@
+body{
+	image-rendering: pixelated; 
+	outline: 60px solid #F285FF;
+}
+.mainimg{
+	max-height: 100vh; 
+}
+span{
+	background-color: unset;
+}
+
+#linksdiv{
+	display: flex;
+	justify-content: center;
+
+	background-color: white; 
+	width: fit-content; 
+
+	padding-left:.2in; 
+	padding-right: .2in; 
+	
+	align-items: center; 
+}
+
+a.button{
+	display: block;
+	width: 88px;
+	height: 31px;
+}
+
+.upsidedown{
+	-webkit-transform: scaleX(-1) scaleY(-1);
+	transform: scaleX(-1) scaleY(-1);
+}
+
+@media screen and (orientation:portrait){
+	max-height: unset; 
+	width: 100%;
+}
