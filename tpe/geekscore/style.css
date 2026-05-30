@@ -1,6 +1,7 @@
 body{
 	image-rendering: pixelated; 
 	outline: 60px solid #F285FF;
+	min-height: 100vh;
 }
 .mainimg{
 	max-height: 100vh; 
