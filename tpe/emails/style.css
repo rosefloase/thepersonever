@@ -1,0 +1,11 @@
+body{
+	image-rendering: pixelated; 
+}
+.mainimg{
+	max-width: 60%; 
+}
+
+@media screen and (orientation:portrait){
+	max-width: unset; 
+	width: 100%;
+}
