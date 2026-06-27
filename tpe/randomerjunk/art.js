@@ -178,6 +178,7 @@ function computer2026() {
   document.getElementById("div").style.backgroundSize = "cover";
   document.getElementById("innerbleh").innerHTML =
     `
+    <h2><span>xbox lesbian ...</span></h2> <img src="https://downloads.thepersonever.net/general/xbox.png" width=500>
     <h2><span>gone, gone, thank you</span></h2> <img src=/images/lightalt.png width=500>
     <h2><span>you can't have it all, dexter morgan</span></h2> <img src=/images/dexter.png width=500>
     <h2><span>asked to make a new trollsona</span></h2> <img src=/images/lybree.png width=500>
