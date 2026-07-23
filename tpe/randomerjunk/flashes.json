@@ -1,5 +1,13 @@
 {
   "flashes": [
+		{"title":"tradtest",
+		"loc":"flashes/tradtest.swf",
+		"url":"tradtest",
+		"width":"600px",
+		"height":"450px",
+		"color":"#ffffff",
+		"comment":"traditional animation test for 13337 :)"
+		},
 		{"title":"[s] balljump",
 		"loc":"flashes/balljump.swf",
 		"url":"balljump",
