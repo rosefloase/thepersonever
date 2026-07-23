@@ -5,6 +5,18 @@ function paper2026() {
   document.getElementById("div").style.backgroundSize = "100%";
   document.getElementById("innerbleh").innerHTML = `
     <a href=/geekscore/1><h2><span>whatever man<span></h2></a> <img src="https://downloads.thepersonever.net/general/pedophile.png" width=500px>
+    <h2><span>alert has been forcing me to learn anatomy<span></h2> <img src=https://downloads.thepersonever.net/general/15.jpg width=500px> 
+    <h2><span>new harley!<span></h2> <img src=https://downloads.thepersonever.net/general/14.jpg width=500px> 
+    <h2><span>i couldn't let go of the name luvare<span></h2> <img src=https://downloads.thepersonever.net/general/13.jpg width=500px> 
+    <h2><span>ngghh... hair...<span></h2> <img src=https://downloads.thepersonever.net/general/12.jpg width=500px> 
+    <h2><span>lybree clothes!<span></h2> <img src=https://downloads.thepersonever.net/general/11.jpg width=500px> 
+    <h2><span>fantrolls are supposed to be the worst version of yourself right<span></h2> <img src=https://downloads.thepersonever.net/general/10.jpg width=500px> 
+    <!--
+    <h2><span>FLAAAMETHROWER!!!!!!<span></h2> <img src=https://downloads.thepersonever.net/general/9.jpg width=500px> 
+    <h2><span>if she wanted luna back luna would be like this<span></h2> <img src=https://downloads.thepersonever.net/general/8.jpg width=500px> 
+    <h2><span>how do wings work?<span></h2> <img src=https://downloads.thepersonever.net/general/7.jpg width=500px> 
+    <h2><span>sooomeone's in loooooove...<span></h2> <img src=https://downloads.thepersonever.net/general/6.jpg width=500px> 
+    -->
     <h2><span>A DIGITAL SKETCH!!!!!!!!!! HORRIBLE. EXECUTE THIS WOMAN</span></h2> <img src=/images/veronicadoodles.png width=500px>
     <h2><span>body :tongue:</span></h2> <img src=https://downloads.thepersonever.net/general/5.jpg width=500px>
     <h2><span>awwww... i guess that's how</span></h2> <img src=https://downloads.thepersonever.net/general/4.jpg width=500px>
@@ -24,7 +36,7 @@ function paper2025() {
   document.getElementById("innerbleh").innerHTML = `
 <h2><span>sketch for the vee piece i did</span></h2> <img src=https://i.imgur.com/402PuYh.jpeg width=500px>
 <h2><span>a little foreboding</span></h2> <img src=https://i.imgur.com/HuiDEl1.jpeg width=500px>
-<!-- <h2><span>AH AH AH AH SPOILERZ!!!!!!!!!!!!!!!</span></h2> <img src=https://i.imgur.com/5uNycxk.jpeg width=500px> -->
+<h2><span>AH AH AH AH SPOILERZ!!!!!!!!!!!!!!!</span></h2> <img src=https://i.imgur.com/5uNycxk.jpeg width=500px>
 <h2><span>still getting back in the groove...</span></h2> <img src=https://i.imgur.com/beeVXjx.jpeg width=500px>
 <h2><span>getting back in the groove</span></h2> <img src=https://i.imgur.com/hmdj60c.jpeg width=500px>
 <h2><span>pikitory practice</span></h2> <img src=https://i.imgur.com/XqZmuhd.jpeg width=500px>
@@ -100,14 +112,10 @@ function paper2024() {
 <h2>phpWAr example</h2> <img src=https://i.imgur.com/6ldUyxV.jpg width=500px>
 <h2>phpWAr planing...</h2> <img src=https://i.imgur.com/8UDSUqC.jpg width=500px>
 
-<!--
-<h2>planning 3</h2> <img src=https://i.imgur.com/rTaW6oU.jpg width=500px>
-<h2>planning 2</h2> <img src=https://i.imgur.com/jT09Dbi.jpg width=500px>
-<h2>planning 1</h2> <img src=https://i.imgur.com/swfhdbF.jpg width=500px>
 
-also hi sneakass
-
--->
+<h2>very old planning 3</h2> <img src=https://i.imgur.com/rTaW6oU.jpg width=500px>
+<h2>very old planning 2</h2> <img src=https://i.imgur.com/jT09Dbi.jpg width=500px>
+<h2>very old planning 1</h2> <img src=https://i.imgur.com/swfhdbF.jpg width=500px>
 
 <h2>BOOM!</h2> <img src=https://i.imgur.com/FVaUWPl.jpg width=500px>
 <h2>i like her</h2> <img src=https://i.imgur.com/7jUxLjn.jpg width=500px>
