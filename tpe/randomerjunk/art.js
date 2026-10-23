@@ -4,6 +4,9 @@ function paper2026() {
     "url(images/awesomepaper.jpg)";
   document.getElementById("div").style.backgroundSize = "100%";
   document.getElementById("innerbleh").innerHTML = `
+    <h2><span>a bunch of smaller sketches!<span></h2> <img src=https://downloads.thepersonever.net/general/sketch2.png width=500px> 
+    <h2><span>hello there studychuddy<span></h2> <img src=https://downloads.thepersonever.net/general/verdoodle.png width=500px> 
+    <h2><span>virbi studies :)<span></h2> <img src=https://downloads.thepersonever.net/general/vibri.png width=500px> 
     <a href=/geekscore/1><h2><span>whatever man<span></h2></a> <img src="https://downloads.thepersonever.net/general/pedophile.png" width=500px>
     <h2><span>alert has been forcing me to learn anatomy<span></h2> <img src=https://downloads.thepersonever.net/general/15.jpg width=500px> 
     <h2><span>new harley!<span></h2> <img src=https://downloads.thepersonever.net/general/14.jpg width=500px> 
